@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Automotores HS | Venta y Compra de Usados</title>
+    <title>Automotores HS | Venta y Tasaciones</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         :root { --primary-color: #28a745; --dark-green: #1e7e34; --dark-color: #1a1a1a; }
         body { font-family: 'Segoe UI', sans-serif; background-color: #f8f9fa; }
+        
+        /* Navbar con nombre resaltado */
+        .navbar-brand { font-weight: 800; letter-spacing: 2px; color: var(--primary-color) !important; font-size: 1.5rem; }
+        
         .hero-section {
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1500&q=80');
             background-size: cover; background-position: center; color: white; padding: 100px 0; text-align: center;
         }
+
         .card-img-top { height: 220px; object-fit: cover; }
         .card { transition: transform 0.3s; border: none; border-radius: 15px; overflow: hidden; }
         .card:hover { transform: translateY(-10px); }
-        .navbar-brand { font-weight: bold; letter-spacing: 1px; color: var(--primary-color) !important; }
-        .bg-usados { background-color: #e9ecef; border-left: 8px solid var(--primary-color); }
+        
+        /* Sección Usados */
+        .bg-usados { background-color: #f1f8f1; border-top: 5px solid var(--primary-color); border-bottom: 5px solid var(--primary-color); }
+        
         footer { background-color: var(--dark-color); color: #ccc; }
         .btn-success { background-color: var(--primary-color); border: none; font-weight: bold; }
         .btn-success:hover { background-color: var(--dark-green); }
@@ -24,107 +31,123 @@
 </head>
 <body>
 
+    <!-- Navegación con el nombre corregido -->
     <nav class="navbar navbar-dark bg-dark sticky-top">
-        <div class="container text-center">
+        <div class="container">
             <a class="navbar-brand mx-auto" href="#">AUTOMOTORES HS</a>
         </div>
     </nav>
 
+    <!-- Bienvenida -->
     <header class="hero-section">
         <div class="container">
             <h1 class="display-3 fw-bold text-uppercase">Automotores HS</h1>
-            <p class="lead mb-4">Tu próximo 0Km o la mejor oferta por tu usado.</p>
+            <p class="lead mb-4 font-italic">Tu próximo 0Km o la mejor oferta por tu usado.</p>
         </div>
     </header>
 
     <!-- Catálogo de Autos -->
     <section id="ventas" class="container py-5">
         <h2 class="text-center fw-bold mb-5">Nuestras Unidades</h2>
-        <div class="row g-4">
+        <div class="row g-4 text-center">
+            
             <!-- MG 3 -->
             <div class="col-md-4">
                 <div class="card shadow h-100">
                     <img src="img/mg3.jpg" class="card-img-top" alt="MG 3">
-                    <div class="card-body text-center">
+                    <div class="card-body">
                         <h5 class="card-title fw-bold">MG M3</h5>
                         <a href="https://wa.me/5491133796497?text=Hola!%20Vengo%20de%20la%20web%20y%20quiero%20info%20del%20MG%20M3" class="btn btn-success w-100 py-2">Consultar WhatsApp</a>
                     </div>
                 </div>
             </div>
+
             <!-- Renault Kwid -->
             <div class="col-md-4">
                 <div class="card shadow h-100">
                     <img src="img/kwid.jpg" class="card-img-top" alt="Renault Kwid">
-                    <div class="card-body text-center">
+                    <div class="card-body">
                         <h5 class="card-title fw-bold">Renault Kwid</h5>
                         <a href="https://wa.me/5491133796497?text=Hola!%20Vengo%20de%20la%20web%20y%20quiero%20info%20del%20Renault%20Kwid" class="btn btn-success w-100 py-2">Consultar WhatsApp</a>
                     </div>
                 </div>
             </div>
+
             <!-- Citroen C3 -->
             <div class="col-md-4">
                 <div class="card shadow h-100">
                     <img src="img/c3.jpg" class="card-img-top" alt="Citroen C3">
-                    <div class="card-body text-center">
+                    <div class="card-body">
                         <h5 class="card-title fw-bold">Citroen C3</h5>
                         <a href="https://wa.me/5491133796497?text=Hola!%20Vengo%20de%20la%20web%20y%20quiero%20info%20del%20Citroen%20C3" class="btn btn-success w-100 py-2">Consultar WhatsApp</a>
                     </div>
                 </div>
             </div>
+
             <!-- Jeep Renegade -->
             <div class="col-md-4">
                 <div class="card shadow h-100">
                     <img src="img/renegade.jpg" class="card-img-top" alt="Jeep Renegade">
-                    <div class="card-body text-center">
+                    <div class="card-body">
                         <h5 class="card-title fw-bold">Jeep Renegade</h5>
                         <a href="https://wa.me/5491133796497?text=Hola!%20Vengo%20de%20la%20web%20y%20quiero%20info%20del%20Jeep%20Renegade" class="btn btn-success w-100 py-2">Consultar WhatsApp</a>
                     </div>
                 </div>
             </div>
+
             <!-- Fiat Cronos -->
             <div class="col-md-4">
                 <div class="card shadow h-100">
                     <img src="img/cronos.jpg" class="card-img-top" alt="Fiat Cronos">
-                    <div class="card-body text-center">
+                    <div class="card-body">
                         <h5 class="card-title fw-bold">Fiat Cronos</h5>
                         <a href="https://wa.me/5491133796497?text=Hola!%20Vengo%20de%20la%20web%20y%20quiero%20info%20del%20Fiat%20Cronos" class="btn btn-success w-100 py-2">Consultar WhatsApp</a>
                     </div>
                 </div>
             </div>
+
             <!-- Volkswagen Polo -->
             <div class="col-md-4">
                 <div class="card shadow h-100">
                     <img src="img/polo.jpg" class="card-img-top" alt="Volkswagen Polo">
-                    <div class="card-body text-center">
+                    <div class="card-body">
                         <h5 class="card-title fw-bold">Volkswagen Polo</h5>
                         <a href="https://wa.me/5491133796497?text=Hola!%20Vengo%20de%20la%20web%20y%20quiero%20info%20del%20VW%20Polo" class="btn btn-success w-100 py-2">Consultar WhatsApp</a>
                     </div>
                 </div>
             </div>
+
+            <!-- Peugeot 208 -->
+            <div class="col-md-4 mx-auto">
+                <div class="card shadow h-100">
+                    <img src="img/208.jpg" class="card-img-top" alt="Peugeot 208">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Peugeot 208</h5>
+                        <a href="https://wa.me/5491133796497?text=Hola!%20Vengo%20de%20la%20web%20y%20quiero%20info%20del%20Peugeot%20208" class="btn btn-success w-100 py-2">Consultar WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- SECCIÓN: VENDEMOS TU USADO -->
-    <section class="py-5 bg-usados">
-        <div class="container text-center">
-            <h2 class="fw-bold mb-3">¿Querés vender tu auto?</h2>
-            <p class="lead mb-4 text-muted">En Automotores HS tomamos tu usado al mejor precio del mercado.</p>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="p-4 bg-white rounded shadow-sm">
-                        <p class="mb-4">Hacé clic abajo y pasanos el <strong>Modelo, Año y Kilometraje</strong> de tu vehículo para recibir una tasación estimada por WhatsApp.</p>
-                        <a href="https://wa.me/5491133796497?text=Hola!%20Quiero%20vender%20mi%20auto.%20Es%20un%20[Modelo/Año/KM]:" class="btn btn-dark btn-lg px-5 fw-bold shadow">Vender mi Usado Ahora</a>
-                    </div>
-                </div>
+    <!-- SECCIÓN DE USADOS -->
+    <section class="py-5 bg-usados text-center">
+        <div class="container">
+            <h2 class="fw-bold mb-3 text-success">¿QUERÉS VENDER TU AUTO?</h2>
+            <p class="lead mb-4">En <strong>Automotores HS</strong> te damos la mejor cotización.</p>
+            <div class="bg-white p-4 rounded shadow-sm d-inline-block w-100" style="max-width: 600px;">
+                <p>Pasame <strong>Modelo, Año y KM</strong> por WhatsApp y te lo tasamos en el día.</p>
+                <a href="https://wa.me/5491133796497?text=Hola!%20Quiero%20vender%20mi%20auto.%20Es%20un:" class="btn btn-dark btn-lg px-5 fw-bold">TASAR MI USADO</a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-5">
-        <div class="container text-center">
+    <footer class="py-5 text-center">
+        <div class="container">
             <h3 class="text-success fw-bold">AUTOMOTORES HS</h3>
-            <p class="small text-muted mb-0">© 2026 - Calidad y Confianza.</p>
+            <p class="small text-muted mb-0">© 2026 - Quilmes, Buenos Aires.</p>
         </div>
     </footer>
 
